@@ -27,7 +27,7 @@ def display():
 	ip_data_bin.set(binary_ip)
 	 #taking subnet mask input
 
-#then going to covert subnet mask to binary num
+#covert subnet mask to binary num
 	j=str(1)
 	sub_data.set(sub_mask.get())
 	for i in range(int(sub_mask.get())):
@@ -39,10 +39,10 @@ def display():
 	for j in range(z):
 		lst.append(b)
 
-	sm_str="".join(lst) #to print with out using list , here we can find without any separation all 1s and zeros
+	sm_str="".join(lst) 
 
 
-	print(sm_str)  #here we can find without any separation all 1s and zeros
+	print(sm_str)  
 
 #moving for spliting 
 	sbd=re.findall('........',sm_str)  #spliting each 8 bit
@@ -54,7 +54,7 @@ def display():
 	print(sm_lst)  #it print in []
 	sub_bin.set(final_sm_b)
 
-#going to convert binary subnet mask to octformat
+# convert binary subnet mask to octformat
 	count=0
 	ijk=[]
 	for i in sm_lst:
